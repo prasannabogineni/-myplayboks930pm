@@ -1,0 +1,10 @@
+---
+- name: My Test Plabook
+  hosts: all
+  become: true
+  tasks:
+  - name: Creating a Directory
+    file:
+      path: /home/ansaadmin/dir1
+      state: directory
+
